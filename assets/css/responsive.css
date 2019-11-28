@@ -1,0 +1,48 @@
+@media only screen and (min-width: 992px) {
+}
+
+@media (max-width: 992px) {
+  .img-fluid {
+    display: none;
+  }
+  .wave {
+    margin-top: 80px;
+  }
+
+  #benefit {
+    padding: 50px 0px;
+  }
+
+  .col-md-3 {
+    flex: auto;
+    max-width: 50%;
+    width: 25%;
+    float: left;
+  }
+
+  .hidden-sm.hidden-xs {
+    display: none;
+  }
+  .col-md-4 {
+    max-width: 100%;
+  }
+
+  .col-sm-6 {
+    flex: auto;
+    width: 50%;
+    float: left;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-md-3 {
+    flex: auto;
+    max-width: max-content;
+    padding: 0px 25px;
+    width: 100%;
+  }
+  .col-sm-6 {
+    width: 100%;
+    max-width: 100%;
+  }
+}
