@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Open+Sans:400,600,700,800&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -515,11 +515,12 @@ body {
 }
 
 /**************Counter Section*****************/
-.padding50 {
-  padding: 20px 0px;
+
+.padding50{
+  padding: 50px 0px;
 }
 
-.counter-content span {
+.counter-content-wrap span{
   float: left;
   margin-right: 15px;
   font-size: 40px;
@@ -543,67 +544,73 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.counter.title {
+.counter-section .counter-title{
   font-size: 1.371rem;
-  padding-top: 15px;
   line-height: 1.2em;
   color: #747474;
   margin-bottom: 0;
-  display: block;
-  font-size: 16px;
-}
-.counter-content h6 {
-  padding-top: 15px;
-  font-family: "Montserrat", sans-serif;
-  color: #747474;
+  font-weight: 600;
 }
 
-.counter-content h6 strong {
-  font-weight: 700;
+.counter-section .counter-title strong{
+font-weight: 700;
+font-family: 'Montserrat', sans-serif;
 }
 
-.list-inline {
-  padding-left: 0;
-  margin-left: -5px;
-  list-style: none;
+.counter-section p{
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: #787878;
 }
 
-.list-inline > li {
-  display: inline-block;
-  padding-right: 5px;
-  padding-left: 5px;
-}
-.counter-list {
+.counter-section .counter-list{
   font-size: 1.143rem;
 }
 
-.counter-list li {
+.counter-section .counter-list li{
   text-align: center;
   margin: 0 40px;
 }
 
-.counter-list li:nth-child(3n + 1) .count {
+.list-inline>li{
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.counter-section .counter-list li:nth-child(3n+1) .count{
   color: #16a085;
 }
 
-.counter-list li:nth-child(3n + 2) .count {
+.counter-section .counter-list li:nth-child(3n+2) .count{
   color: #1abc9c;
 }
 
-.counter-list li:nth-child(3n + 3) .count {
+.counter-section .counter-list li:nth-child(3n+3) .count{
   color: #38ef7d;
 }
 
-.counter-list .count {
-  font-size: 1.571rem;
+.counter-section .counter-list .count{
+  font-size: 25px !important;
   margin-bottom: 5px;
   display: block;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700 !important;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-.counter-list .title {
+.counter-section .counter-list .title{
+  color: #767676;
+  font-family: 'Open Sans', sans-serif;
+  display: block;
   font-size: 16px;
-  color: #787878;
-  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
 }

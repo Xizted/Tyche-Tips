@@ -45,17 +45,4 @@
     width: 100%;
     max-width: 100%;
   }
-  .counter-content span {
-    text-align: center;
-    display: block;
-    margin-bottom: 15px;
-    float: none;
-  }
-
-  .counter-title {
-    text-align: center;
-  }
-  .counter-content p {
-    text-align: center;
-  }
 }
