@@ -1,5 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Open+Sans:400,600,700,800&display=swap");
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Open+Sans:400,600,700,800&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -516,11 +516,11 @@ body {
 
 /**************Counter Section*****************/
 
-.padding50{
-  padding: 50px 0px;
+.padding-top {
+  padding-top: 50px;
 }
 
-.counter-content-wrap span{
+.counter-content-wrap span {
   float: left;
   margin-right: 15px;
   font-size: 40px;
@@ -544,7 +544,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.counter-section .counter-title{
+.counter-section .counter-title {
   font-size: 1.371rem;
   line-height: 1.2em;
   color: #747474;
@@ -552,65 +552,145 @@ body {
   font-weight: 600;
 }
 
-.counter-section .counter-title strong{
-font-weight: 700;
-font-family: 'Montserrat', sans-serif;
+.counter-section .counter-title strong {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
 }
 
-.counter-section p{
+.counter-section p {
   font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #787878;
 }
 
-.counter-section .counter-list{
+.counter-section .counter-list {
   font-size: 1.143rem;
 }
 
-.counter-section .counter-list li{
+.counter-section .counter-list li {
   text-align: center;
   margin: 0 40px;
 }
 
-.list-inline>li{
+.list-inline > li {
   display: inline-block;
   padding-right: 5px;
   padding-left: 5px;
 }
 
-.counter-section .counter-list li:nth-child(3n+1) .count{
+.counter-section .counter-list li:nth-child(3n + 1) .count {
   color: #16a085;
 }
 
-.counter-section .counter-list li:nth-child(3n+2) .count{
+.counter-section .counter-list li:nth-child(3n + 2) .count {
   color: #1abc9c;
 }
 
-.counter-section .counter-list li:nth-child(3n+3) .count{
+.counter-section .counter-list li:nth-child(3n + 3) .count {
   color: #38ef7d;
 }
 
-.counter-section .counter-list .count{
+.counter-section .counter-list .count {
   font-size: 25px !important;
   margin-bottom: 5px;
   display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700 !important;
   margin: 0;
   padding: 0;
   border: 0;
   font: inherit;
-  vertical-align: baseline;
 }
 
-.counter-section .counter-list .title{
+.counter-section .counter-list .title {
   color: #767676;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   display: block;
   font-size: 16px;
   margin: 0;
   padding: 0;
   border: 0;
   font: inherit;
-  vertical-align: baseline;
+}
+
+/*************Section Social**************/
+
+.section_wrapper {
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.social_margins {
+  padding: 40px 0 10px 0;
+}
+
+.align_center {
+  text-align: center;
+}
+
+.section_box {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+
+ul.social_icons {
+  display: block;
+  width: 100%;
+  max-width: 1140px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #787878;
+  list-style: none;
+}
+
+ul.social_icons li {
+  display: inline-block;
+  margin: 10px 0 !important;
+  padding: 0 30px !important;
+  text-align: center;
+  line-height: 100% !important;
+}
+
+ul.social_icons li a i {
+  font-size: 36px;
+  line-height: 36px;
+  color: #767676;
+  -webkit-transition: all 0.25s ease-in-out;
+}
+
+ul.social_icons li a i:hover {
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  color: #38ef7d;
+}
+
+#footer {
+  width: 100%;
+  background-color: #2d3436;
+  border-top: 1px solid #2a2f37;
+  z-index: 100;
+  padding: 50px 0px 20px 0px;
+}
+
+#footer-box {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.p-footer {
+  font-family: "Open Sans", sans-serif;
+  color: #636e72;
+  margin-bottom: 25px;
+  line-height: 24px;
+  font-weight: 300;
 }
