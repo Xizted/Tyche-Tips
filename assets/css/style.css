@@ -534,7 +534,15 @@ body {
 .download-btn.hover-active {
   background: #fff;
 }
-
+.dowload-section {
+  margin-top: 110px;
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+.download-img {
+  margin-bottom: -40px;
+}
 .download-btn {
   border: 1px solid #fff;
   margin-right: 20px;
@@ -584,6 +592,10 @@ body {
   margin-bottom: 5px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+}
+
+.download-btn small {
+  font-weight: 600;
 }
 
 .download-btn.hover-active p {

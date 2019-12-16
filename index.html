@@ -17,6 +17,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+<script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent" crossorigin="anonymous"></script>
+    <script src="assets/js/locomotive-scroll.min.js"></script>
     <script src="assets/js/main.js"></script>
     <link
       rel="stylesheet"
@@ -28,7 +31,7 @@
     />
     <title>Tyche Tips</title>
   </head>
-  <body class="hidden-body">
+  <body data-scroll class="hidden-body">
     <!------------------Preloader--------------------------->
     <div class="center" id="preloader">
       <div class="lds-ring">
@@ -78,7 +81,7 @@
       </div>
     </nav>
     <!-----Banner Section----->
-    <section id="inicio" data-text="Home">
+    <section id="inicio" id="js-scroll" class="js-scroll" data-text="Home" data-scroll-section>
       <div class="container">
         <div class="row">
           <div class="col-md-7">
@@ -483,7 +486,7 @@
             <div class="download-app-button wow animated zoomInUp">
               <a
                 href="#"
-                class="download-btn hover-active"
+                class="download-btn"
                 style="text-decoration: none;"
               >
                 <span class="ti-android"></span>
@@ -499,7 +502,7 @@
             <div class="download-img">
               <img
                 src="assets/img/download-app.png"
-                class="img-responsive img-download wow animated bounceInDown"
+                class="img-fluid img-download wow animated bounceInDown"
                 alt="Descargar App"
               />
             </div>
