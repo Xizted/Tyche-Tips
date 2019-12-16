@@ -289,15 +289,13 @@ body {
   padding: 90px 0px;
 }
 
-.section-head {
-  margin-right: 60px;
-}
 
 .section-head h3 {
   padding: 15px;
   color: #2c3e50;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  text-align: center;
 }
 
 .section-head p {
@@ -306,6 +304,7 @@ body {
   margin-left: auto;
   font-family: "Open Sans", sans-serif;
   position: relative;
+  text-align: center;
 }
 
 .freatured {
@@ -695,7 +694,6 @@ body {
   color: #767676;
   font-family: "Open Sans", sans-serif;
   display: block;
-  font-size: 16px;
   margin: 0;
   padding: 0;
   border: 0;
