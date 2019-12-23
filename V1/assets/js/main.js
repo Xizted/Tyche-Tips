@@ -1,8 +1,6 @@
 window.onload = function() {
   $("#preloader").fadeOut();
   $("body").removeClass("hidden-body");
-  $("nav").addClass("fixed-top");
-
   $(".promo-title").addClass("animated fadeInUp");
   $(".promo-subtitle").addClass("animated fadeInLeft");
   $(".btn-downloadnow").addClass("animated delay-1s zoomInLeft");
@@ -19,5 +17,3 @@ window.onload = function() {
   });
   new WOW().init();
 };
-
-

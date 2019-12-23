@@ -203,19 +203,19 @@ body {
   width: 100%;
 }
 
-/*--------------Section Benefit-------------------*/
+/*--------------Section beneficios-------------------*/
 
 .padding {
   padding: 90px 0;
   background: #fff;
 }
 
-#benefit {
+#beneficios {
   padding: 90px 0;
   background: #fff;
 }
 
-.benefit {
+.beneficios {
   background-color: #fff;
   display: block;
   border-radius: 4px;
@@ -225,7 +225,7 @@ body {
   cursor: pointer !important;
 }
 
-.benefit:after {
+.beneficios:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -248,12 +248,12 @@ body {
   width: 0;
 }
 
-.benefit:hover:after {
+.beneficios:hover:after {
   width: 100%;
   left: 0;
 }
 
-.benefit-section {
+.beneficios-section {
   width: 35px;
   margin-bottom: 10px;
 }

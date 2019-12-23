@@ -17,14 +17,6 @@ body {
   overflow: hidden;
 }
 
-.center {
-  height: 100vh;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .lds-ring {
   display: inline-block;
   position: relative;
@@ -76,6 +68,19 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #ffffff;
   padding: 0 !important;
+}
+
+.center {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
 }
 
 .navbar-brand {
@@ -203,19 +208,19 @@ body {
   width: 100%;
 }
 
-/*--------------Section Benefit-------------------*/
+/*--------------Section beneficios-------------------*/
 
 .padding {
   padding: 90px 0;
   background: #fff;
 }
 
-#benefit {
+#beneficios {
   padding: 90px 0;
   background: #fff;
 }
 
-.benefit {
+.beneficios {
   background-color: #fff;
   display: block;
   border-radius: 4px;
@@ -225,7 +230,7 @@ body {
   cursor: pointer !important;
 }
 
-.benefit:after {
+.beneficios:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -248,12 +253,12 @@ body {
   width: 0;
 }
 
-.benefit:hover:after {
+.beneficios:hover:after {
   width: 100%;
   left: 0;
 }
 
-.benefit-section {
+.beneficios-section {
   width: 35px;
   margin-bottom: 10px;
 }
@@ -288,7 +293,6 @@ body {
 #caracteristica {
   padding: 90px 0px;
 }
-
 
 .section-head h3 {
   padding: 15px;
