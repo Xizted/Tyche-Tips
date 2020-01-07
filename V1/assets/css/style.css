@@ -24,6 +24,7 @@ body {
   height: 80px;
 }
 .lds-ring div {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
   position: absolute;
@@ -32,42 +33,41 @@ body {
   margin: 8px;
   border: 8px solid #fff;
   border-radius: 50%;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #fff transparent transparent transparent;
 }
 .lds-ring div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
   animation-delay: -0.45s;
 }
 .lds-ring div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
   animation-delay: -0.3s;
 }
 .lds-ring div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
   animation-delay: -0.15s;
 }
-@keyframes lds-ring {
+@-webkit-keyframes lds-ring {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
-/******Navbar******/
-.navbar {
-  background: #04a6a1; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #38ef7d,
-    #04a6a1
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #38ef7d,
-    #04a6a1
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #ffffff;
-  padding: 0 !important;
+@keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 .center {
@@ -83,25 +83,50 @@ body {
   z-index: 100000;
 }
 
-.navbar-brand {
-  height: 40px;
-  padding-left: 40px;
+/******Navbar******/
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1300;
 }
 
-.navbar-brand h1 {
-  color: #ffffff !important;
-  font-size: 25px;
-  font-weight: 500;
+.navbar {
+  background: #04a6a1; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#38ef7d),
+    to(#04a6a1)
+  );
+  background: linear-gradient(
+    to right,
+    #38ef7d,
+    #04a6a1
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 0 !important;
+}
+
+.navbar-brand img {
+  height: 50px;
+  padding-left: 50px;
+}
+
+#logo {
+  color: #ffff;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 5px;
+  font-weight: 600;
 }
 
 .navbar-nav li {
   padding: 0 10px;
 }
 
-.navbar-nav a {
-  font-family: "Montserrat", sans-serif;
-  color: #ffffff !important;
-  font-weight: 600;
+.navbar-nav li a {
+  color: #fff !important;
+  font-weight: bold;
+  float: right;
   text-align: left;
 }
 
@@ -127,7 +152,7 @@ body {
 }
 
 .fa-bars {
-  color: #ffffff;
+  color: #fff;
   font-size: 30px !important;
 }
 
@@ -138,12 +163,14 @@ body {
 /************Banner Section************/
 
 #inicio {
-  background: #04a6a1; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #38ef7d,
-    #04a6a1
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: #04a6a1; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#38ef7d),
+    to(#04a6a1)
+  );
   background: linear-gradient(
     to right,
     #38ef7d,
@@ -157,7 +184,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 600;
-  margin-top: 150px;
+  margin-top: 110px;
 }
 
 .promo-subtitle {
@@ -187,6 +214,7 @@ body {
 }
 
 .btn-outline-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 184, 148, 1);
   box-shadow: 0 0 0 0.2rem rgba(0, 184, 148, 1);
 }
 
@@ -201,7 +229,6 @@ body {
   color: #2c3e50;
 }
 .img-fluid {
-  margin-top: 45px;
   margin-bottom: 30px;
 }
 .wave {
@@ -238,17 +265,20 @@ body {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #04a6a1; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #38ef7d,
-    #04a6a1
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: #04a6a1; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#38ef7d),
+    to(#04a6a1)
+  );
   background: linear-gradient(
     to right,
     #38ef7d,
     #04a6a1
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -309,26 +339,38 @@ body {
   font-family: "Open Sans", sans-serif;
   position: relative;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .freatured {
+  -webkit-box-align: start !important;
+  -ms-flex-align: start !important;
   align-items: flex-start !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
   padding: 1.5em 1em;
   cursor: pointer;
 }
 
 .icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 2.75em;
   min-height: 2.75rem;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
 }
 
 .icon-shape {
   text-align: center;
   border-radius: 0.25rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -360,6 +402,7 @@ body {
 }
 
 .freatured-content p {
+  text-align: justify;
   font-size: 100%;
   font-family: "Open Sans", sans-serif;
   color: #787878;
@@ -503,12 +546,14 @@ body {
   left: 0;
   z-index: -1;
   opacity: 0.7;
-  background: #04a6a1; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #38ef7d,
-    #04a6a1
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: #04a6a1; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#38ef7d),
+    to(#04a6a1)
+  );
   background: linear-gradient(
     to right,
     #38ef7d,
@@ -551,7 +596,11 @@ body {
   margin-right: 20px;
   position: relative;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   float: left;
   padding: 5px 20px;
@@ -561,16 +610,19 @@ body {
 
 .download-btn a {
   color: #16a085;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .download-btn.hover-active span {
-  background: #04a6a1; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #38ef7d 15%,
-    #04a6a1 90%
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: #04a6a1; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(15%, #38ef7d),
+    color-stop(90%, #04a6a1)
+  );
   background: linear-gradient(
     to bottom,
     #38ef7d 15%,
@@ -618,14 +670,18 @@ body {
   line-height: 40px;
   position: relative;
   overflow: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   top: 8px;
-  background: #04a6a1; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #38ef7d 15%,
-    #04a6a1 90%
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: #04a6a1; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(15%, #38ef7d),
+    color-stop(90%, #04a6a1)
+  );
   background: linear-gradient(
     to bottom,
     #38ef7d 15%,
@@ -756,6 +812,7 @@ ul.social_icons li a i {
 }
 
 ul.social_icons li a i:hover {
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
