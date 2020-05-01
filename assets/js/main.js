@@ -1,11 +1,6 @@
 jQuery(function ($) {
   "use strict";
 
-  //  1. preloader
-  $(window).ready(function () {
-    $("#preloader").delay(200).fadeOut("fade");
-  });
-
   //  3. navbar or menu
   $(window).scroll(function () {
     if ($(".navbar").offset().top > 50) {
@@ -25,3 +20,14 @@ jQuery(function ($) {
     $(this).addClass("active").siblings().removeClass("active");
   });
 });
+
+window.onload = function () {
+  $("#preloader").fadeOut(),
+    $("body").removeClass("hidden-body"),
+    $(".promo-title").addClass("animated fadeInUp"),
+    $(".promo-subtitle").addClass("animated fadeInLeft"),
+    $(".btn-downloadnow1").addClass("animated delay-1s zoomInLeft"),
+    $(".btn-downloadnow2").addClass("animated delay-1s zoomInRight"),
+    $(".smartphone").addClass("animated bounceInUp"),
+    new WOW().init();
+};

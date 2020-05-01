@@ -4,12 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tyche Tips</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!--    Boostrap    -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css"
+    />
+    <!--    Font Awesone    -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
+    <!--    Themify   -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css"
+    />
+    <!--    Animate.css   -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <!--    Css Custom  -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
     <!-- Preloader -->
@@ -25,40 +42,37 @@
           <nav class="navbar navbar-light bg-light fixed-top navbar-expand-md">
             <div class="container">
               <div class="row">
+                <a class="navbar-brand" href="#"
+                  ><img src="assets/img/tyche.png" alt="logo" class="logo" />
+                  <span id="name">Tyche Tips</span></a
+                >
                 <button
+                  class="navbar-toggler collapsed ml-auto"
                   type="button"
-                  class="navbar-toggler collapsed"
                   data-toggle="collapse"
-                  data-target="#myNavbar"
+                  data-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
                 >
                   <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="index.html">
-                  <img src="assets/img/tyche.png" alt="logo" class="logo" />
-                  <span id="name">Tyche Tips</span>
-                </a>
-                <div class="navbar-collapse collapse" id="myNavbar">
+                <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="nav navbar-nav ml-auto">
-                    <li class="active nav-item">
-                      <a class="page-scroll nav-link" href="#hero">Home</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#hero">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll nav-link" href="#features"
-                        >Features</a
-                      >
+                      <a class="nav-link" href="#features">Features</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll nav-link" href="#About">About us</a>
+                      <a class="nav-link" href="#About">About us</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll nav-link" href="#faqs"
-                        >Help Center</a
-                      >
+                      <a class="nav-link" href="#faqs">Help Center</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll nav-link" href="#download"
-                        >Available soon</a
-                      >
+                      <a class="nav-link" href="#download">Available soon</a>
                     </li>
                   </ul>
                 </div>
@@ -89,19 +103,21 @@
               <div class="col-lg-8">
                 <div class="hero-content-wrap">
                   <div class="hero-content">
-                    <h1>Lorem ipsum dolor sit.</h1>
-                    <p>
+                    <h1 class="promo-title">Lorem ipsum dolor sit.</h1>
+                    <p class="promo-subtitle">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Dicta quisquam quibusdam, reprehenderit repellendus
                       necessitatibus provident molestias asperiores itaque neque
                       omnis!
                     </p>
                     <div class="slider-action-btn">
-                      <a href="" class="btn softo-solid-btn">
-                        <i class="fab fa-apple"></i><span class="download">AppStore</span>
+                      <a href="" class="btn softo-solid-btn btn-downloadnow1">
+                        <i class="fab fa-apple"></i
+                        ><span class="download">AppStore</span>
                       </a>
-                      <a href="" class="btn softo-solid-btn">
-                        <i class="fab fa-android"></i><span class="download">Play Store</span>
+                      <a href="" class="btn softo-solid-btn btn-downloadnow2">
+                        <i class="fab fa-android"></i
+                        ><span class="download">Play Store</span>
                       </a>
                     </div>
                   </div>
@@ -113,7 +129,7 @@
                     <img
                       src="assets/img/smartphone.png"
                       alt=""
-                      class="img-fluid"
+                      class="img-fluid smartphone"
                     />
                   </div>
                 </div>
@@ -131,9 +147,11 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-3 col-md-6">
-                  <div class="bg-secondary single-benefit-section text-center">
+                  <div
+                    class="bg-secondary single-benefit-section text-center wow animated bounceInUp"
+                  >
                     <div class="single-benefit-content">
-                      <img src="assets/img/1.png" alt="" class="benefit-logo">
+                      <img src="assets/img/1.png" alt="" class="benefit-logo" />
                       <h6>Lorem, ipsum dolor.</h6>
                       <p>
                         Lorem ipsum dolor sit amet, eam ex probo tation
@@ -144,9 +162,11 @@
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                  <div class="bg-secondary single-benefit-section text-center">
+                  <div
+                    class="bg-secondary single-benefit-section text-center wow animated bounceInUp"
+                  >
                     <div class="single-benefit-content">
-                      <img src="assets/img/2.png" alt="" class="benefit-logo">
+                      <img src="assets/img/2.png" alt="" class="benefit-logo" />
                       <h6>Lorem, ipsum.</h6>
                       <p>
                         Lorem ipsum dolor sit amet, eam ex probo tation
@@ -157,9 +177,11 @@
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                  <div class="bg-secondary single-benefit-section text-center">
+                  <div
+                    class="bg-secondary single-benefit-section text-center wow animated bounceInUp"
+                  >
                     <div class="single-benefit-content">
-                      <img src="assets/img/3.png" alt="" class="benefit-logo">
+                      <img src="assets/img/3.png" alt="" class="benefit-logo" />
                       <h6>Lorem, ipsum dolor.</h6>
                       <p>
                         Lorem ipsum dolor sit amet, eam ex probo tation
@@ -170,9 +192,11 @@
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                  <div class="bg-secondary single-benefit-section text-center">
+                  <div
+                    class="bg-secondary single-benefit-section text-center wow animated bounceInUp"
+                  >
                     <div class="single-benefit-content">
-                      <img src="assets/img/4.png" alt="" class="benefit-logo">
+                      <img src="assets/img/4.png" alt="" class="benefit-logo" />
                       <h6>Lorem, ipsum.</h6>
                       <p>
                         Lorem ipsum dolor sit amet, eam ex probo tation
@@ -193,9 +217,12 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="section-heading text-center">
-                  <h3>Lorem, ipsum.</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam at rem iste architecto! Voluptate, necessitatibus nemo!
+                  <h3 class="animated wow fadeIn">Features of Tyche Tips</h3>
+                  <p class="animated wow fadeIn">
+                    Tyche Tips is a financial assistant that works as a
+                    regulator of personal and business finances, it is a service
+                    of accompaniment to be able to carry out a healthy and
+                    profitable economy. Offering services such as:
                   </p>
                 </div>
               </div>
@@ -203,7 +230,7 @@
             <div class="row align-items-center">
               <div class="col-lg-4 col-md-6">
                 <!--feature single start-->
-                <div class="single-feature mb-5">
+                <div class="single-feature mb-5 animated wow bounceInLeft">
                   <div class="feature-icon">
                     <div class="icon icon-shape bg-color white-text">
                       <i class="far fa-credit-card"></i>
@@ -212,13 +239,14 @@
                   <div class="feature-content">
                     <h5>Lorem, ipsum dolor.</h5>
                     <p class="mb-0">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium!
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Laudantium!
                     </p>
                   </div>
                 </div>
                 <!--feature single end-->
                 <!--feature single start-->
-                <div class="single-feature mb-5">
+                <div class="single-feature mb-5 animated wow bounceInLeft">
                   <div class="feature-icon">
                     <div class="icon icon-shape bg-color white-text">
                       <i class="fas fa-exchange-alt"></i>
@@ -227,13 +255,14 @@
                   <div class="feature-content">
                     <h5>Lorem, ipsum dolor.</h5>
                     <p class="mb-0">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsam.
                     </p>
                   </div>
                 </div>
                 <!--feature single end-->
                 <!--feature single start-->
-                <div class="single-feature mb-5">
+                <div class="single-feature mb-5 animated wow bounceInLeft">
                   <div class="feature-icon">
                     <div class="icon icon-shape bg-color white-text">
                       <i class="fas fa-scroll"></i>
@@ -242,13 +271,14 @@
                   <div class="feature-content">
                     <h5>Lorem, ipsum dolor.</h5>
                     <p class="mb-0">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fuga.
                     </p>
                   </div>
                 </div>
                 <!--feature single end-->
               </div>
-              <div class="col-lg-4 hidden-xsd-none d-sm-block-up hidden-sm-up">
+              <div class="col-lg-4 d-none d-lg-block animated wow bounceIn">
                 <div class="feature-image">
                   <img
                     src="assets/img/smartphone2.png"
@@ -259,49 +289,49 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <!--feature single start-->
-                <div class="single-feature mb-5">
+                <div class="single-feature mb-5 animated wow bounceInRight">
                   <div class="feature-icon">
                     <div class="icon icon-shape bg-color white-text">
                       <i class="fa fa-check-circle"></i>
                     </div>
                   </div>
                   <div class="feature-content">
-                    <h5>Free updates forever</h5>
+                    <h5>Lorem, ipsum dolor.</h5>
                     <p class="mb-0">
-                      Modular and interchangable componente between layouts and
-                      even demos.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Placeat?
                     </p>
                   </div>
                 </div>
                 <!--feature single end-->
                 <!--feature single start-->
-                <div class="single-feature mb-5">
+                <div class="single-feature mb-5 animated wow bounceInRight">
                   <div class="feature-icon">
                     <div class="icon icon-shape bg-color white-text">
                       <i class="fas fa-bell"></i>
                     </div>
                   </div>
                   <div class="feature-content">
-                    <h5>Infinite colors</h5>
+                    <h5>Lorem, ipsum.</h5>
                     <p class="mb-0">
-                      Modular and interchangable componente between layouts and
-                      even demos.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sunt.
                     </p>
                   </div>
                 </div>
                 <!--feature single end-->
                 <!--feature single start-->
-                <div class="single-feature mb-5">
+                <div class="single-feature mb-5 animated wow bounceInRight">
                   <div class="feature-icon">
                     <div class="icon icon-shape bg-color white-text">
-                      <i class="fa fa-smile-o"></i>
+                      <i class="fas fa-users"></i>
                     </div>
                   </div>
                   <div class="feature-content">
-                    <h5>Friendly online support</h5>
+                    <h5>Lorem, ipsum dolor.</h5>
                     <p class="mb-0">
-                      Modular and interchangable componente between layouts and
-                      even demos.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ea?
                     </p>
                   </div>
                 </div>
@@ -311,10 +341,323 @@
           </div>
         </section>
         <!--end features section-->
+        <!------------Section Goals------------>
+        <section
+          id="About"
+          class="section-goals ptb-90"
+          data-text="GoalsAndView"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="left-text wow animated fadeInLeft">
+                  <div class="text">
+                    <h2>
+                      Misión
+                    </h2>
+                    <p>
+                      Nuestra Misión es automatizar los procesos de asesoría
+                      financiera, organizando la información y los bienes de la
+                      persona y/o empresa con el fin de hacerla más intuitiva y
+                      así asesorar correctamente al usuario hacia su
+                      rentabilidad y estabilidad económica.
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="media">
+                        <div class="media-left">
+                          <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <div class="media-body">
+                          <h4>
+                            Disponibilidad en todos los paises de Latinoamérica
+                            y España
+                          </h4>
+                          <p>
+                            Esta aplicación estará disponible para todos los
+                            países de Latinoamérica y España al inicio y luego
+                            expandirse a todo el mundo.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="media PTOP">
+                        <div class="media-left">
+                          <i class="fas fa-user-friends"></i>
+                        </div>
+                        <div class="media-body">
+                          <h4>
+                            Nuestro mercado objetivo son los millennials.
+                          </h4>
+                          <p>
+                            Dentro de ese marco nuestro mercado objetivo son los
+                            millennials que pertenecen de entre la clase media a
+                            la clase alta, que quieren emprender proyectos o
+                            quieren tener hábitos financieros más saludables.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="media">
+                        <div class="media-left">
+                          <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="media-body">
+                          <h4>
+                            Efectivididad en los consumidores.
+                          </h4>
+                          <p>
+                            Buscamos ofrecer servicios que resulten efectivos
+                            para aquellos consumidores actuales de este sector y
+                            que dichos servicios puedan levantar la curiosidad
+                            de personas que están iniciando ese proceso.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="media">
+                        <div class="media-left">
+                          <i class="fas fa-flag"></i>
+                        </div>
+                        <div class="media-body">
+                          <h4>
+                            Ayudar A lograr tus Metas.
+                          </h4>
+                          <p>
+                            Esta aplicación sirve como un puente entre tus metas
+                            y tu dinero, asegurando que tus ingresos vayan a los
+                            lugares que tienen que ir por responsabilidad,
+                            dejando el excedente para lograr tus metas
+                            personales.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 d-none d-lg-block">
+                <div class="right-img wow animated fadeInRight img-fluid">
+                  <img src="assets/img/mision.svg" alt="Mision" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!------------END Section Goals------------>
+        <!-------------------Section View--------------------->
+        <section id="vision" class="ptb-90">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div
+                  class="img-left wow animated fadeInLeft img-fluid d-none d-lg-block"
+                >
+                  <img src="assets/img/vision.svg" alt="Vision" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="right-text wow animated fadeInRight">
+                  <div class="text">
+                    <h2>
+                      Visión
+                    </h2>
+                    <p>
+                      Tenemos como visión proveer a nuestros usuarios las
+                      herramientas necesarias para manejar sus finanzas, de
+                      manera segura y eficaz. Ofreciendo soluciones tecnológicas
+                      y automatizadas a sus problemas financieros.
+                    </p>
+                  </div>
+                  <div class="list">
+                    <div class="media">
+                      <div class="icono media-left icon1">
+                        <i class="fas fa-shoe-prints"></i>
+                      </div>
+                      <div class="body-text">
+                        <h4>Siempre estamos un paso delante del Cliente.</h4>
+                      </div>
+                    </div>
+                    <div class="media">
+                      <div class="icono media-left icon2">
+                        <i class="fas fa-search"></i>
+                      </div>
+                      <div class="body-text">
+                        <h4>
+                          Nos mantenemos analizando el uso, consumo y gastos.
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="media">
+                      <div class="icono media-left icon3">
+                        <i class="fas fa-info-circle"></i>
+                      </div>
+                      <div class="body-text">
+                        <h4>
+                          Recomendamos a nuestros usuarios hábitos para mejorar
+                          su vida financiera.
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="media">
+                      <div class="icono media-left icon4">
+                        <i class="fas fa-cogs"></i>
+                      </div>
+                      <div class="body-text">
+                        <h4>
+                          Extraemos una recopilacion los elementos más valiosos
+                          para así optimizar nuestros servicios y ser cada vez
+                          más precisos.
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-------------------END Section View--------------------->
+        <!--start download section-->
+        <section
+          class="download-section"
+          style="
+            background: url('assets/img/downloadbg-min.jpg') no-repeat center
+              center scroll;
+            background-size: cover;
+          "
+          id="download"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7 col-md-12">
+                <div class="download-app-text wow animated bounceInDown">
+                  <h3>Lorem ipsum dolor sit.</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+                    in odio quidem reprehenderit tempore dolorem. Aut, commodi?
+                  </p>
+                  <div class="download-app-button wow animated zoomInUp">
+                    <a href="#" class="download-btn">
+                      <span class="ti-apple"></span>
+
+                      <p>
+                        <small>Download On</small>
+
+                        <br />
+
+                        App Store
+                      </p>
+                    </a>
+                    <a href="#" class="download-btn">
+                      <span class="ti-android"></span>
+
+                      <p>
+                        <small>Git It On</small>
+
+                        <br />Google Play
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 hidden-smd-block d-md-block-up">
+                <div class="download-app-img wow animated bounceInDown">
+                  <img
+                    src="assets/img/download-app.png"
+                    alt="app download"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--end download section-->
+        <!--start counter section-->
+        <section class="product-counter-section ptb-50">
+          <div class="product-counter-wrap">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-md-6">
+                  <div class="counter-content-wrap wow animated fadeIn">
+                    <span class="ti-cup"></span>
+                    <h6 class="counter-title">
+                      <strong>Trusted by 4000+</strong>
+                    </h6>
+                    <p>High performing team worldwide</p>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-md-6 counter">
+                  <ul class="counter-list list-inline text-right wow animated fadeIn">
+                    <li class="list-inline-item">
+                      <span class="count">145052</span>
+                      <span class="title">Downloads</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <span class="count">4400+</span>
+                      <span class="title">Active Installs</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <span class="count">5000+</span>
+                      <span class="title">Users</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--end  counter section-->
+        <!-------------------------Section Social----------------------------->
+        <section>
+          <div class="section_wrapper bg-secondary">
+            <div class="section_box social_margins align_center wow animated rubberBand">
+              <ul class="social_icons">
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCAWS7AT4iCGK2QMpLU3uWDw"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/tyche_tips/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-------------------------END Section Social----------------------------->
+        <!---------------------Footer---------------->
+        <footer id="footer">
+          <div id="footer-box">
+            <p class="p-footer wow animated fadeInUp">
+              Copyright &copy;2020 Tyche Tips. Designed and Developed by Xizted.
+            </p>
+          </div>
+        </footer>
+        <!---------------------END Footer---------------->
       </div>
     </div>
-    <script src="assets/js/jquery-3.5.0.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <!--    Jquery   -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--    BootsrapJs   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <!--    Wow.js   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!--    JS custom  -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
