@@ -26,8 +26,10 @@ window.onload = function () {
     $("body").removeClass("hidden-body"),
     $(".promo-title").addClass("animated fadeInUp"),
     $(".promo-subtitle").addClass("animated fadeInLeft"),
-    $(".btn-downloadnow1").addClass("animated delay-1s zoomInLeft"),
+    $(".slider-action-btn").addClass("animated delay-1s fadeIn"),
     $(".btn-downloadnow2").addClass("animated delay-1s zoomInRight"),
     $(".smartphone").addClass("animated bounceInUp"),
+   // $(".btn-downloadnow1").removeClass("animated delay-1s fadeIn"),
+    $(".btn-downloadnow1").addClass("animated pulse infinite")
     new WOW().init();
 };
