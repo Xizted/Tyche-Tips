@@ -4,17 +4,17 @@
 		    Reset CSS
 ====================================*/
 
-html,
+a,
 body,
 div,
-img,
-a,
-li,
-ul,
 header,
+html,
+i,
+img,
+li,
 nav,
 span,
-i {
+ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -40,7 +40,7 @@ html {
 }
 
 .hidden-body {
-  overflow: hidden
+  overflow: hidden;
 }
 
 h1,
@@ -52,7 +52,7 @@ h6 {
   margin: 0 0 10px;
   padding: 0;
   color: #2c3e50;
-  font-family: "Monserrat", sans-serif;
+  font-family: Monserrat, sans-serif;
 }
 
 h1 {
@@ -91,13 +91,12 @@ h6 {
   font-weight: 600;
 }
 
-b,
 strong {
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
-p{
+p {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -127,15 +126,14 @@ a {
 }
 
 a:active,
-a:focus,
-a:active {
+a:focus {
   text-decoration: none;
 }
 
-a:hover,
-a:focus {
+a:focus,
+a:hover {
   color: #1abc9c;
-  outline: none;
+  outline: 0;
   text-decoration: none;
 }
 
@@ -171,7 +169,6 @@ a:focus {
   background: #04a6a1 !important;
 }
 
-/*text color*/
 .white-text {
   color: #fff !important;
 }
@@ -180,36 +177,12 @@ a:focus {
   color: #04a6a1 !important;
 }
 
-.gray-text {
-  color: #4a4a4a !important;
-}
-
-.softo-btn-outline {
-  padding: 5px 30px;
-  border: 2px solid #04a6a1;
-  background-color: transparent;
-  color: #04a6a1;
-  font: 600 14px/30px "Montserrat", sans-serif;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  letter-spacing: 0.5px;
-}
-
-.softo-btn-outline:hover {
-  border: 2px solid #04a6a1;
-  background-color: #04a6a1;
-  color: #fff;
-  text-decoration: none;
-  -webkit-transform: translateY(-2px);
-  transform: translateY(-2px);
-}
-
 .softo-solid-btn {
   padding: 5px 30px;
   border: 2px solid #04a6a1;
   background-color: #04a6a1;
   color: #fff;
-  font: 600 14px/30px "Montserrat", sans-serif;
+  font: 600 14px/30px Montserrat, sans-serif;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   letter-spacing: 0.5px;
@@ -217,7 +190,7 @@ a:focus {
 
 .softo-solid-btn:hover {
   border: 2px solid #04a6a1;
-  background: transparent;
+  background: 0 0;
   color: #000;
   text-decoration: none;
   -webkit-transform: translateY(-2px);
@@ -247,6 +220,7 @@ button {
   z-index: 9999;
   background: #fff;
 }
+
 #loader {
   display: block;
   position: relative;
@@ -261,6 +235,7 @@ button {
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
+
 #loader:before {
   content: "";
   position: absolute;
@@ -274,6 +249,7 @@ button {
   -webkit-animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
 }
+
 #loader:after {
   content: "";
   position: absolute;
@@ -287,11 +263,12 @@ button {
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
 }
+
 @-webkit-keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
@@ -299,11 +276,12 @@ button {
     transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
@@ -321,13 +299,14 @@ button {
   margin: 0 auto;
 }
 
-/*section heading*/
 .section-heading {
   margin-bottom: 50px;
 }
+
 .section-heading h3 {
   font-weight: 700;
 }
+
 .section-heading p {
   max-width: 650px;
   margin-right: auto;
@@ -378,43 +357,32 @@ button {
 
 .navbar .nav.navbar-nav li a:hover,
 .navbar .nav.navbar-nav li.active a {
-  background: transparent;
+  background: 0 0;
   color: #fff;
   opacity: 1;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   margin: auto 0;
 }
 
 .navbar .navbar-toggler,
-.navbar .navbar-toggler:hover,
+.navbar .navbar-toggler.collapsed:active,
 .navbar .navbar-toggler:active,
-.navbar .navbar-toggler.collapsed:active {
+.navbar .navbar-toggler:hover {
   margin-top: 16px;
   border: 1px solid #fff;
   background-color: #fff;
 }
 
-.navbar .navbar-toggler .icon-bar,
-.navbar .navbar-togge:hover .icon-bar,
-.navbar .navbar-toggler:active .icon-bar,
-.navbar .navbar-toggler.collapse:active .icon-bar {
-  background-color: #04a6a1;
+.navbar .navbar-toggler.collapsed {
+  border: 1px solid #04a6a1;
+  background: 0 0;
 }
 
 .navbar .navbar-toggler.collapsed {
   border: 1px solid #04a6a1;
-  background: transparent;
-}
-
-.navbar .navbar-toggler.collapsed {
-  border: 1px solid #04a6a1;
-  background: transparent;
-}
-
-.navbar .navbar-toggler.collapsed .icon-bar {
-  background-color: #fff;
+  background: 0 0;
 }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
@@ -423,59 +391,66 @@ button {
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .navbar {
-      padding: 20px 0;
-      border-bottom: 1px solid rgba(0, 0, 0, 0);
-      background: transparent !important;
-      -o-transition: border-bottom .3s ease-in-out,background .3s ease-in-out,padding .3s ease-in-out;
-      -webkit-transition: border-bottom .3s ease-in-out,background .3s ease-in-out,padding .3s ease-in-out;
-      -moz-transition: border-bottom .3s ease-in-out,background .3s ease-in-out,padding .3s ease-in-out;
-      transition: border-bottom .3s ease-in-out,background .3s ease-in-out,padding .3s ease-in-out;
-      backface-visibility: hidden;
-      -webkit-backface-visibility: hidden;
-      -ms-transition: border-bottom .3s ease-in-out,background .3s ease-in-out,padding .3s ease-in-out;
-}
-
+    padding: 20px 0;
+    border-bottom: 1px solid transparent;
+    background: 0 0 !important;
+    -o-transition: border-bottom 0.3s ease-in-out, background 0.3s ease-in-out,
+      padding 0.3s ease-in-out;
+    -webkit-transition: border-bottom 0.3s ease-in-out,
+      background 0.3s ease-in-out, padding 0.3s ease-in-out;
+    -moz-transition: border-bottom 0.3s ease-in-out, background 0.3s ease-in-out,
+      padding 0.3s ease-in-out;
+    transition: border-bottom 0.3s ease-in-out, background 0.3s ease-in-out,
+      padding 0.3s ease-in-out;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -ms-transition: border-bottom 0.3s ease-in-out, background 0.3s ease-in-out,
+      padding 0.3s ease-in-out;
+  }
   .navbar .nav.navbar-nav {
-      padding-top: 0;
-      padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
-
   .navbar .navbar-collapse {
-      border: none;
+    border: none;
   }
-
   .navbar.top-nav-collapse {
-      padding: 0;
-      background: linear-gradient(150deg, #04a6a1 15%, #1abc9c 70%, #38ef7d 94%) !important;
+    padding: 0;
+    background: linear-gradient(
+      150deg,
+      #04a6a1 15%,
+      #1abc9c 70%,
+      #38ef7d 94%
+    ) !important;
   }
-
   .navbar .navbar-brand {
-      margin-right: 16px;
-      margin-left: 0 !important;
+    margin-right: 16px;
+    margin-left: 0 !important;
   }
-
   .navbar .nav.navbar-nav li a,
-  .navbar .nav.navbar-nav.navbar-right li a	{
-      padding: 20px 10px;
-      -o-transition: all .2s ease-in-out;
-      -webkit-transition: all .2s ease-in-out;
-      -moz-transition: all .2s ease-in-out;
-      transition: all .2s ease-in-out;
-      font-family: 'Montserrat', sans-serif;
+  .navbar .nav.navbar-nav.navbar-right li a {
+    padding: 20px 10px;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    font-family: Montserrat, sans-serif;
   }
-
-  .navbar .nav.navbar-nav li.active a,
-  .navbar .nav.navbar-nav li a:hover	{
-      background: transparent;
-      color: #e7f3ff;
+  .navbar .nav.navbar-nav li a:hover,
+  .navbar .nav.navbar-nav li.active a {
+    background: 0 0;
+    color: #e7f3ff;
   }
 }
-
 
 /*====================================
 		    END Header CSS
+====================================*/
+
+/*====================================
+		    Hero CSS
 ====================================*/
 
 /*====================================
@@ -1135,64 +1110,48 @@ button {
   -webkit-box-shadow: 0 1px 2px rgba(212, 212, 212, 0.35);
   box-shadow: 0 1px 2px rgba(212, 212, 212, 0.35);
 }
+
 .single-benefit-section:hover {
   -webkit-box-shadow: 0 1px 2px rgba(212, 212, 212, 0.55);
   box-shadow: 0 1px 2px rgba(212, 212, 212, 0.55);
   cursor: pointer;
 }
+
 .single-benefit-section:hover .line {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
+
 .single-benefit-content {
   padding: 25px 25px 0;
 }
-.benefit-logo{
+
+.benefit-logo {
   width: 35px;
   height: 35px;
 }
+
 .single-benefit-content h6 {
   font-size: 15px;
   line-height: 23px;
 }
+
 .single-benefit-content p {
   margin-bottom: 25px;
 }
+
 .single-benefit-section .line {
   width: 100%;
   height: 2px;
   background: #04a6a1;
   background: linear-gradient(150deg, #04a6a1 15%, #1abc9c 70%, #38ef7d 94%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04a6a1', endColorstr='#38ef7d', GradientType=1);
   -webkit-transform: scale(0);
   transform: scale(0);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
-/*benefit two*/
-
-.benefit-bottom-image {
-  background-position: bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 115px;
-  opacity: 1;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  height: 350px;
-  width: 100%;
-}
-@media screen and (max-width: 1023px) and (orientation: landscape) {
-  .benefit-bottom-image {
-    margin-top: 50px;
-  }
-}
-
 @media screen and (max-width: 767px) {
-  .benefit-bottom-image {
-    height: 0;
-  }
   .benefit-section {
     padding-bottom: 30px;
   }
@@ -1222,6 +1181,7 @@ button {
   margin-right: 20px;
   transition: all 0.3s ease-in;
 }
+
 .icon-shape {
   text-align: center;
   border-radius: 0.25rem;
@@ -1237,6 +1197,7 @@ button {
   color: inherit;
   transition: all 0.3s ease-in;
 }
+
 .icon-shape i {
   font-size: 1.2rem;
 }
@@ -1246,6 +1207,7 @@ button {
   line-height: 22px;
   margin-bottom: 5px;
 }
+
 .single-feature:hover .icon {
   border-radius: 50%;
 }
@@ -1258,22 +1220,21 @@ button {
      VIEW AND GOALS SECTION CSS
 ==============================*/
 
-
-.icono{
+.icono {
   display: block;
-  margin: auto 0px;
+  margin: auto 0;
 }
 
 .text {
-  padding-bottom: 50px
+  padding-bottom: 50px;
 }
 
 .text h2 {
   color: #2c3e50;
   font-size: 40px;
   font-weight: 700;
-  letter-spacing: .8px;
-  padding-bottom: 35px
+  letter-spacing: 0.8px;
+  padding-bottom: 35px;
 }
 
 .text p {
@@ -1281,46 +1242,46 @@ button {
   line-height: 24px;
   color: #787878;
   font-weight: 700;
-  letter-spacing: .28px
+  letter-spacing: 0.28px;
 }
 
 .right-img {
   text-align: center;
   vertical-align: bottom;
   height: 100%;
-  margin-top: 180px
+  margin-top: 180px;
 }
 
 .right-img img {
-  max-width: 100%
+  max-width: 100%;
 }
 
 .media:first-child {
-  margin-top: 0
+  margin-top: 0;
 }
 
 .media {
-  margin-top: 40px
+  margin-top: 40px;
 }
 
 .media-left {
-  padding-right: 15px
+  padding-right: 15px;
 }
 
 .media-left i {
-  font-size: 32px
+  font-size: 32px;
 }
 
 .media-body {
-  width: 100%
+  width: 100%;
 }
 
 .media-body h4 {
   font-size: 18px;
   font-weight: 700;
   color: #2c3e50;
-  letter-spacing: .36px;
-  padding-bottom: 22px
+  letter-spacing: 0.36px;
+  padding-bottom: 22px;
 }
 
 .media-body p {
@@ -1328,36 +1289,36 @@ button {
   font-size: 14px;
   line-height: 24px;
   color: #787878;
-  letter-spacing: .28px
+  letter-spacing: 0.28px;
 }
 
 .img-left {
-  margin-top: 80px
+  margin-top: 80px;
 }
 
 .img-left img {
   width: 100%;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 .list .media {
   background: #f6f7fa;
-  padding: 12px 0 12px 30px
+  padding: 12px 0 12px 30px;
 }
 
 .list .media .icono i {
-  font-size: 36px
+  font-size: 36px;
 }
 
 .list .media .body-text h4 {
   font-size: 18px;
-  color: #2c3e50
+  color: #2c3e50;
 }
 
 .list .media .body-text {
   padding-top: 10px;
   display: table-cell;
-  vertical-align: 100%
+  vertical-align: 100%;
 }
 
 /*==============================
@@ -1381,8 +1342,12 @@ button {
   height: 100%;
   content: "";
   z-index: -1;
-  background: linear-gradient(150deg, rgba(4, 166, 161, 0.76) 15%, rgba(26, 188, 156, 0.89) 70%, rgba(56, 239, 125, 0.74) 94%)
-
+  background: linear-gradient(
+    150deg,
+    rgba(4, 166, 161, 0.76) 15%,
+    rgba(26, 188, 156, 0.89) 70%,
+    rgba(56, 239, 125, 0.74) 94%
+  );
 }
 
 .download-app-img {
@@ -1392,11 +1357,11 @@ button {
 .download-app-text {
   padding: 100px 0;
 }
+
 .download-app-text h3,
 .download-app-text p {
   color: #fff;
 }
-
 
 .newsletter {
   position: relative;
@@ -1409,6 +1374,7 @@ button {
 .newsletter-form {
   position: relative;
 }
+
 .newsletter-form .input-newsletter {
   height: 50px;
   display: block;
@@ -1423,6 +1389,7 @@ button {
   padding-bottom: 0;
   padding-left: 15px;
 }
+
 .newsletter-form button {
   position: absolute;
   right: 0;
@@ -1433,7 +1400,7 @@ button {
   background-color: #38ef7d;
   display: inline-block;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding-left: 40px;
@@ -1441,6 +1408,7 @@ button {
   font-size: 14px;
   font-weight: 600;
 }
+
 .newsletter-form button i {
   position: absolute;
   right: 35px;
@@ -1451,8 +1419,10 @@ button {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.newsletter-form button:focus, .newsletter-form .input-newsletter:focus{
-  outline: none;
+
+.newsletter-form .input-newsletter:focus,
+.newsletter-form button:focus {
+  outline: 0;
 }
 
 /*
@@ -1524,7 +1494,6 @@ Buttons Download
 }
 */
 
-
 /*============================================================
 				END Download app
 ============================================================*/
@@ -1532,7 +1501,6 @@ Buttons Download
 /*============================================================
 				Start Counter app
 ============================================================*/
-
 
 .counter-content-wrap span {
   float: left;
@@ -1543,48 +1511,56 @@ Buttons Download
   overflow: hidden;
   align-items: center;
   top: 8px;
-  background: linear-gradient(150deg, #04a6a1 15%, #1abc9c 70%, #38ef7d 94%); 
+  background: linear-gradient(150deg, #04a6a1 15%, #1abc9c 70%, #38ef7d 94%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .product-counter-section .counter-title {
   font-size: 1.371rem;
   line-height: 1.2em;
   color: #747474;
   margin-bottom: 0;
 }
+
 .product-counter-section .counter-list {
   font-size: 1.143rem;
 }
+
 .product-counter-section .counter-list li {
   text-align: center;
   margin: 0 40px;
 }
+
 .product-counter-section .counter-list .count {
   font-size: 1.571rem;
   margin-bottom: 5px;
   display: block;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
 }
+
 .product-counter-section .counter-list .title {
   display: block;
   font-size: 16px;
 }
+
 .product-counter-section .counter-list li:nth-child(3n + 1) .count {
   color: #04a6a1;
 }
+
 .product-counter-section .counter-list li:nth-child(3n + 2) .count {
   color: #1abc9c;
 }
+
 .product-counter-section .counter-list li:nth-child(3n + 3) .count {
   color: #38ef7d;
 }
 
 @media (max-width: 768px) {
-  .product-counter-section .counter-title,
-  .counter-content-wrap p {
+  .counter-content-wrap p,
+  .product-counter-section .counter-title {
     text-align: center;
   }
   .product-counter-section .counter-list li {
@@ -1615,22 +1591,22 @@ Buttons Download
 
 .section_wrapper {
   width: 100%;
-  position: relative
+  position: relative;
 }
 
 .social_margins {
-  padding: 40px 0 10px
+  padding: 40px 0 10px;
 }
 
 .align_center {
-  text-align: center
+  text-align: center;
 }
 
 .section_box {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
-  position: relative
+  position: relative;
 }
 
 ul.social_icons {
@@ -1642,31 +1618,31 @@ ul.social_icons {
   line-height: 24px;
   font-weight: 300;
   color: #787878;
-  list-style: none
+  list-style: none;
 }
 
 ul.social_icons li {
   display: inline-block;
-  margin: 10px 0!important;
-  padding: 0 30px!important;
+  margin: 10px 0 !important;
+  padding: 0 30px !important;
   text-align: center;
-  line-height: 100%!important
+  line-height: 100% !important;
 }
 
 ul.social_icons li a i {
   font-size: 36px;
   line-height: 36px;
   color: #767676;
-  -webkit-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 ul.social_icons li a i:hover {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  -webkit-transition: all .25s ease-in-out;
-  color: #38ef7d
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  color: #38ef7d;
 }
 
 /*============================================================
@@ -1678,7 +1654,7 @@ ul.social_icons li a i:hover {
   background-color: #2d3436;
   border-top: 1px solid #2a2f37;
   z-index: 100;
-  padding: 50px 0 20px
+  padding: 50px 0 20px;
 }
 
 #footer-box {
@@ -1687,15 +1663,15 @@ ul.social_icons li a i:hover {
   margin: 0 auto;
   padding-left: 5%;
   padding-right: 5%;
-  text-align: center
+  text-align: center;
 }
 
 .p-footer {
   font-family: "Open Sans", sans-serif;
-  color: #80888B;
+  color: #80888b;
   margin-bottom: 25px;
   line-height: 24px;
-  font-weight: 300
+  font-weight: 300;
 }
 
 /*============================================================

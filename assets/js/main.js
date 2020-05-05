@@ -98,7 +98,13 @@ newsletter.addEventListener("submit", function (e) {
             text: `Se ha registrado con el siguiente email: ${data}`,
           });
         }
-        
+      })
+      .catch((e) => {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `Ha Ocurrido un error: ${e}`,
+        });
       });
   }
 });
