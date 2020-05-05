@@ -515,7 +515,7 @@
                         <h4>
                           Extraemos una recopilacion los elementos más valiosos
                           para así optimizar nuestros servicios y ser cada vez
-                          más precisos.
+                          más precisos.|
                         </h4>
                       </div>
                     </div>
@@ -566,14 +566,14 @@
                         <br />Google Play
                       </p>
                     </a>-->
-                    <form class="newsletter-form mt-3">
-                      <input type="text" class="input-newsletter" placeholder="Enter your email" name="EMAIL" required="" autocomplete="off">
+                    <form class="newsletter-form mt-3" method="POST" action="form-submit.php">
+                      <input type="email" class="input-newsletter" placeholder="Enter your email" name="email" id="email" required autocomplete="off">
                       <button type="submit" class="disabled" style="pointer-events: all; cursor: pointer;"><i class="fas fa-paper-plane"></i></button>
                   </form>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-5 hidden-smd-block d-md-block-up">
+              <div class="col-lg-5 d-none d-lg-block">
                 <div class="download-app-img wow animated bounceInDown">
                   <img
                     src="assets/img/download-app.png"
