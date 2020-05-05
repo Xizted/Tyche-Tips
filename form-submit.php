@@ -10,18 +10,20 @@ $list_id = 'f76c05a46b';
 
 $MailChimp = new MailChimp($api_key);
 
-if ($_POST) {
-    $email = $_POST['email'];
 
+$email = $_POST['email'];
 
-    $result = $MailChimp->post("lists/$list_id/members", [
-        'email_address' => $email,
-        'status'        => 'subscribed',
-    ]);
+if ($email === '') {
+    echo json_encode('error');
+}
 
-    if ($MailChimp->success()) {
-        echo "<h2>Submitted Successfully</h2>";
-    } else {
-        echo $MailChimp->getLastError();
-    }
+$result = $MailChimp->post("lists/$list_id/members", [
+    'email_address' => $email,
+    'status'        => 'subscribed',
+]);
+
+if ($MailChimp->success()) {
+    echo json_encode($email);
+} else {
+    echo json_encode('Error');
 }
