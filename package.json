@@ -4,7 +4,7 @@
   "description": "Tyche Tips Page Oficial",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "npm app.js"
   },
   "repository": {
     "type": "git",
