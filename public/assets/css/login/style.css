@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Spartan:wght@300;600&display=swap");
+
+:root {
+  --gradient: linear-gradient(150deg, #04a6a1 15%, #1abc9c 70%, #38ef7d 94%);
+  --dark: #000000;
+  --green: #10918c;
+  --greenlight: #3fdf7c;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-weight: 300;
+  color: var(--dark);
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+
+.bleft{
+  border-left: 2px solid var(--green);
+}
+
+
+.bg-green {
+  background: var(--green);
+  border-bottom: 1px solid var(--green);
+}
+
+#name {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 5px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.form-control,
+.btn {
+  min-height: 3.125rem;
+  line-height: initial;
+}
+
+.btn-login {
+  background-color: var(--green) !important;
+  border-color: var(--greenlight) !important;
+}
+
+.img-1{
+  background-image: url('../../img/login/img-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.img-2{
+  background-image: url('../../img/login/img-2-min.jpg');
+  background-size: cover;
+  background-position: center;
+}
