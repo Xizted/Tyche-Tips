@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Spartan:wght@300;600&display=swap");
 
 :root {
-  --gradient: linear-gradient(150deg, #04a6a1 15%, #1abc9c 70%, #38ef7d 94%);
+  --gradient: linear-gradient(to right, #11998e, #38ef7d);
   --dark: #000000;
   --green: #10918c;
-  --greenlight: #3fdf7c;
+  --greenButton: #34B7B3;
+  --greenButtonlight: #46AAA2;
 }
 
 body {
@@ -24,8 +25,12 @@ a:hover {
 
 
 .bg-green {
-  background: var(--green);
+  background: var(--gradient);
   border-bottom: 1px solid var(--green);
+}
+
+.bg-white{
+  background-color: rgba(255,255,255,0.1) !important;
 }
 
 #name {
@@ -33,7 +38,8 @@ a:hover {
   font-family: "Montserrat", sans-serif;
   margin-left: 5px;
   font-weight: 600;
-  padding-bottom: 10px;
+  font-size: 20px;
+  display: block;
 }
 
 .form-control,
@@ -43,8 +49,16 @@ a:hover {
 }
 
 .btn-login {
-  background-color: var(--green) !important;
-  border-color: var(--greenlight) !important;
+  background-color: var(--greenButton) !important;
+  border-color: var(--greenButtonlight) !important;
+  font-weight: bold;
+}
+
+.btn-social-login:hover{
+  background: var(--gradient) !important;
+  border-color: var(--green) !important;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .img-1{
