@@ -1,5 +1,6 @@
 "use strict";
 import "./styles.css";
+
 /*
 
 =========================================================================
@@ -35,4 +36,3 @@ window.onload = () => {
   preloader.classList.add("hidden");
   new WOW().init();
 };
-
