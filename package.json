@@ -32,6 +32,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "@mailchimp/mailchimp_marketing": "^3.0.24"
+    "@mailchimp/mailchimp_marketing": "^3.0.24",
+    "sweetalert2": "^10.10.4"
   }
 }

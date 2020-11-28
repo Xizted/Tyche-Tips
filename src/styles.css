@@ -174,7 +174,7 @@ button {
   background: #fff;
 }
 .hidden {
-  display: none;
+  display: none!important;
 }
 #loader {
   width: 80px;
@@ -588,6 +588,11 @@ button {
   line-height: 22px;
   margin-bottom: 5px;
 }
+
+.feature-content p{
+  text-align: justify;
+}
+
 .single-feature:hover .icon {
   border-radius: 50%;
 }
