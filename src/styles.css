@@ -404,9 +404,9 @@ button {
   min-height: 100vh;
   background: linear-gradient(
     150deg,
-    rgba(4, 166, 161, 0.65) 15%,
-    rgba(26, 188, 156, 0.55) 70%,
-    rgba(56, 239, 125, 0.5) 94%
+    rgba(4, 166, 161, 0.75) 15%,
+    rgba(26, 188, 156, 0.65) 70%,
+    rgba(56, 239, 125, 0.6) 94%
   );
 }
 .hero-content {
@@ -563,7 +563,7 @@ button {
 }
 
 .feature-image {
-  margin-left: 25px;
+  margin-left: 50px;
 }
 
 .icon-shape {
